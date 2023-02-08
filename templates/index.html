@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yusam's Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <script src="../static/js/index_page.js"></script>
+</head>
+<body>
+    <div class=" body">
+        <h1 class = "header1">
+            ChatBot
+        </h1>
+        <h4 id="number">
+            {{ number }} / 3 , please fill with three person's information
+        </h4>
+        <label for="input" id="label_input">What is your name?</label>
+        <!--form method="post"-->
+        <div>
+            <input type="text" name="name" id = input>
+            <br>
+            <button onclick="showMessage1()">Click Me</button>
+            <!--input type="submit" value="Submit" id="summit-button" onclick="showMessage()"-->
+        </div>
+
+        
+        <form action="/submit" method="post">
+            <div id="color_question">
+                <label  id="color_label" >hi</label>
+                <br>
+                <input type="text" name="color" id = input_color>
+                <br>
+                <button type="button" onclick="showMessage2()">Click Me</button>
+            </div>
+
+            <div id="age_question">
+                <label  id="age_label" >hi</label>
+                <br>
+                <input type="text" name="age" id = input_age>
+                <br>
+                <button type="button" onclick="showMessage3()">Click Me</button>
+            </div>
+
+        
+            <div id="time_question">
+                <label  id="time_label" >hi</label>
+                <br>
+                <input type="text" name="time" id = input_time>
+                <br>
+                    
+                <input type="submit" value="Submit" id="summit-button">
+                    
+            </div>
+        </form>
+        
+        
+
+    </div>
+        
+</body>
+</html>
+
